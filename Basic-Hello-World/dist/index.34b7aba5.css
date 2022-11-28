@@ -1,0 +1,37 @@
+body {
+  background-color: beige;
+}
+
+.title {
+  margin: 20px;
+  padding: 10px;
+}
+
+.heading-3 {
+  color: #5f9ea0;
+}
+
+.search {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.search-bar {
+  width: 50em;
+  height: 3em;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.react-logo {
+  width: 120px;
+  height: 120px;
+}
+
+.user-logo {
+  width: 100px;
+  height: 75px;
+}
+
+/*# sourceMappingURL=index.34b7aba5.css.map */

@@ -1,0 +1,35 @@
+body {
+  background-color: beige;
+}
+
+.title {
+  padding: 10px;
+  margin: 20px;
+}
+
+.heading-3 {
+  color: cadetblue;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-bar {
+  width: 50em;
+  height: 3em;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.react-logo {
+  width: 120px;
+  height: 120px;
+}
+
+.user-logo {
+  width: 100px;
+  height: 75px;
+}

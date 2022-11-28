@@ -1,0 +1,30 @@
+{
+  "name": "Basic-Hello-World",
+  "version": "1.0.0",
+  "description": "",
+  "browserslist": "last 2 versions, not dead",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ketanmalik/Basic-Hello-World.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ketanmalik/Basic-Hello-World/issues"
+  },
+  "homepage": "https://github.com/ketanmalik/Basic-Hello-World#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.0",
+    "process": "^0.11.10"
+  }
+}
