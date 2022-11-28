@@ -1,0 +1,65 @@
+[
+  {
+    "photo": "https://scontent.fblr1-4.fna.fbcdn.net/v/t39.30808-6/300263394_8002850723090093_2751057166146335726_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=4RmZpGywgsIAX8Cp-h-&_nc_ht=scontent.fblr1-4.fna&oh=00_AfD5NI7x4rCyqYs04MAAh6hq91QixLQNJQB-ce2T8uynwQ&oe=6385377D",
+    "name": "Sumit Gokhale",
+    "place": "Brookfield, Bangalore",
+    "Company": "Ciena",
+    "Designation": "Software Engineer 2",
+    "linkedinProfile": "",
+    "discord-id": ""
+  },
+
+  {
+    "photo": "https://aravind-g-portfolio.netlify.app/images/aravind-mall.jpg",
+    "name": "Aravind Ganesh",
+    "place": "Thiruvallur , TamilNadu",
+    "Company": "Epsilon",
+    "Designation": "Front End Developer 2",
+    "linkedinProfile": "https://www.linkedin.com/in/aravind-g-frontend/",
+    "discord-id": "AravindGanesh#4021"
+  },
+
+  {
+    "photo": "https://instagram.fblr23-1.fna.fbcdn.net/v/t51.2885-19/306817343_403500325191739_1289749220104928338_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fblr23-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=pQfVvX37ODYAX8jlrxK&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfCyvNX3NSHd67oR9YI7zcuh1Js9KWsybP43WUX02n9DFA&oe=638688C7&_nc_sid=8fd12b",
+    "name": "Ehraz Ahmad",
+    "place": "Hoodi, Bangalore",
+    "Company": "Symphony Talent",
+    "Designation": "Full Stack Developer",
+    "linkedinProfile": "",
+    "discord-id": ""
+  },
+  {
+    "photo": "https://scontent.fdel27-5.fna.fbcdn.net/v/t1.6435-9/120300090_1401917953339744_4526160489616159108_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=vf01-5emDmEAX-A_b6P&tn=cOTsm3FbCjEH4WMU&_nc_ht=scontent.fdel27-5.fna&oh=00_AfA-HYnJL6dh8lVSiv1kfJyVhldGgo-Jz4JVVohCYD3V_g&oe=63A84959",
+    "name": "Meenakshi Pandey",
+    "place": "Electronic City, Bangalore ",
+    "Company": "Siemens Healthineers",
+    "Designation": "Full Stack Developer",
+    "linkedinProfile": "www.linkedin.com/in/meenakshi-pandey-590b3079",
+    "discord-id": "meenakshipandey#1422"
+  },
+  {
+    "photo": "https://drive.google.com/file/d/16n4Tjzb7yAMD4G4NxPMXEIAmtmO5fsLa/view?usp=sharing",
+    "name": "Sudhanshu Kansal",
+    "place": "Ghaziabad",
+    "College": "Lovely Professional University ",
+    "Designation": "Aspiring Software Engineer ",
+    "linkedinProfile": "https://www.linkedin.com/in/sudhanshukansal09/",
+    "discord-id": "sudhanshukansal#6088"
+  },
+  {
+    "photo": "https://i.ytimg.com/vi/Dz4wdzwjGGw/hqdefault.jpg",
+    "name": "Anuraddha",
+    "place": "Mumbai",
+    "Company": "Laxmi Chit Fund",
+    "Designation": "Fund manager"
+  },
+  {
+    "photo": "data:image/jpeg;base64,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",
+    "name": "Ketan Malik",
+    "place": "Delhi",
+    "Company": "Amazon",
+    "Designation": "Software Dev Engineer 1",
+    "linkedinProfile": "https://www.linkedin.com/in/ketanmalik/",
+    "discord-id": "ketanmalik#2207"
+  }
+]
