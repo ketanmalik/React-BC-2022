@@ -1,0 +1,10 @@
+.header-wrapper {
+  padding: 20px;
+  background-color: #dce6ef;
+  box-shadow: 0 5px 6px -6px #4f4f4f;
+}
+
+.header-wrapper > img {
+  width: 200px;
+  height: 50px;
+}

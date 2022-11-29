@@ -1,0 +1,18 @@
+.content-wrapper {
+  padding: 2em;
+  margin-top: 2em;
+}
+
+.content-wrapper > span {
+  font-size: 2em;
+  color: #454545;
+}
+
+.content-wrapper > hr {
+  border-top: 3px solid #bbb;
+}
+
+.teamMembers-details {
+  display: flex;
+  flex-wrap: wrap;
+}
