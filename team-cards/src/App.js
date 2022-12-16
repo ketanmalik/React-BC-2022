@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import "./Styles/App.css";
 
 const App = () => {
+  const [userData, setUserData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
 
   const fetchData = async () => {
@@ -22,6 +23,7 @@ const App = () => {
       const json = await data.json();
       userData.push(json);
     }
+    setUserData(userData);
     setFilteredData(userData);
   };
 
@@ -32,7 +34,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <Search data={filteredData} setFilteredData={setFilteredData} />
+      <Search data={userData} setFilteredData={setFilteredData} />
       {filteredData.length > 0 ? (
         <Content data={filteredData} />
       ) : (
