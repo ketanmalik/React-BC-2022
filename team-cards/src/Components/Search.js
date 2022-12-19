@@ -1,8 +1,7 @@
 import { useState } from "react";
-import data from "../data/teamData.json";
 import "../Styles/Search.css";
 
-const searchTeamMembers = (e, searchTerm, setFilteredData) => {
+const searchTeamMembers = (e, searchTerm, setFilteredData, data) => {
   e.preventDefault();
   const filteredData = data.filter((teamMember) =>
     teamMember.name.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())
@@ -10,11 +9,15 @@ const searchTeamMembers = (e, searchTerm, setFilteredData) => {
   setFilteredData(filteredData);
 };
 
-const Search = ({ setFilteredData }) => {
+const Search = ({ setFilteredData, data }) => {
   const [searchTerm, setSearchTerm] = useState();
   return (
     <div className="search-wrapper">
-      <form onSubmit={(e) => searchTeamMembers(e, searchTerm, setFilteredData)}>
+      <form
+        onSubmit={(e) =>
+          searchTeamMembers(e, searchTerm, setFilteredData, data)
+        }
+      >
         <input
           className="search-box"
           type="text"

@@ -1,25 +1,22 @@
 import "../Styles/Cards.css";
-import userIcon from "../assets/user-not-found.jpeg";
 
 const Cards = (props) => {
   const { data } = props;
   return (
     <div className="cards-wrapper">
       <div className="card-intro">
-        <object data={data.photo} className="cards-img">
-          <img src={userIcon} alt="Just testing." />
-        </object>
+        <img src={data.avatar_url} className="cards-img" alt="Just testing." />
         <h3>Hi, I'm {data.name}</h3>
       </div>
       <div className="card-content">
         <span>
-          <b>Location: </b> {data.place}
+          <b>Location: </b> {data.location}
         </span>
         <span>
-          <b>Company: </b> {data.Company}
+          <b>Company: </b> {data.company}
         </span>
         <span>
-          <b>Designation: </b> {data.Designation}
+          <b>Designation: </b> {data.bio}
         </span>
         <br />
       </div>
