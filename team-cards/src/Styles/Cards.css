@@ -16,6 +16,7 @@
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 .card-intro > h3 {

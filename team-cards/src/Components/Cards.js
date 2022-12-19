@@ -1,13 +1,15 @@
+import { Link } from "react-router-dom";
 import "../Styles/Cards.css";
 
 const Cards = (props) => {
   const { data } = props;
+  console.log(data);
   return (
     <div className="cards-wrapper">
-      <div className="card-intro">
+      <Link className="card-intro" to={`/user/${data.login}`}>
         <img src={data.avatar_url} className="cards-img" alt="Just testing." />
         <h3>Hi, I'm {data.name}</h3>
-      </div>
+      </Link>
       <div className="card-content">
         <span>
           <b>Location: </b> {data.location}
