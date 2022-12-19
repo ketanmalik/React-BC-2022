@@ -1,0 +1,24 @@
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.search-box {
+  margin-top: 3em;
+  margin-right: 1em;
+  width: 30em;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.search-button {
+  width: 10em;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #fbfbfb;
+}
+
+.search-button:hover {
+  background-color: #ededed;
+}
