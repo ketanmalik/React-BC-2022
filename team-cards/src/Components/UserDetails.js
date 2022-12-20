@@ -1,26 +1,32 @@
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import React from "react";
 import Content from "./Content";
 import fetchUserDetails from "../utils/githubService";
 
-const UserDetails = () => {
-  const { id } = useParams();
-  const [userInfo, setUserInfo] = useState([]);
+class UserDetails extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { userInfo: [] };
+  }
 
-  const fetchUser = async () => {
-    const userData = await fetchUserDetails([id]);
-    setUserInfo(userData);
+  fetchUser = async () => {
+    const id = window.location.href.split("/")[4];
+    const userInfo = await fetchUserDetails([id]);
+    this.setState({ userInfo });
   };
 
-  useEffect(() => {
-    fetchUser();
-  }, []);
+  async componentDidMount() {
+    await this.fetchUser();
+  }
 
-  return (
-    <div className="users-wrapper">
-      <Content data={userInfo} />
-    </div>
-  );
-};
+  render() {
+    const { userInfo } = this.state;
+
+    return (
+      <div className="users-wrapper">
+        <Content data={userInfo} />
+      </div>
+    );
+  }
+}
 
 export default UserDetails;

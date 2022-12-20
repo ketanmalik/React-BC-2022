@@ -3,7 +3,6 @@ import "../Styles/Cards.css";
 
 const Cards = (props) => {
   const { data } = props;
-  console.log(data);
   return (
     <div className="cards-wrapper">
       <Link className="card-intro" to={`/user/${data.login}`}>

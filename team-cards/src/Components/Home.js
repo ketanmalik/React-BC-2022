@@ -1,15 +1,20 @@
+import React from "react";
 import Content from "./Content.js";
 import Search from "./Search.js";
 import NoResultsFound from "./NoResultsFound.js";
-import { useState, useEffect } from "react";
 import fetchUserDetails from "../utils/githubService";
 import "../Styles/Home.css";
 
-const Home = () => {
-  const [userData, setUserData] = useState([]);
-  const [filteredData, setFilteredData] = useState([]);
+class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      userData: [],
+      filteredData: [],
+    };
+  }
 
-  const fetchData = async () => {
+  fetchData = async () => {
     const users = [
       "ketanmalik",
       "SumitARG",
@@ -17,26 +22,34 @@ const Home = () => {
       "Ehraz98",
       "pandeymeenakshi",
     ];
-
     const userData = await fetchUserDetails(users);
-    setUserData(userData);
-    setFilteredData(userData);
+    this.setState({ userData, filteredData: userData });
   };
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  setFilteredData = (filteredData) => {
+    this.setState({ filteredData });
+  };
 
-  return (
-    <>
-      <Search data={userData} setFilteredData={setFilteredData} />
-      {filteredData.length > 0 ? (
-        <Content data={filteredData} />
-      ) : (
-        <NoResultsFound />
-      )}
-    </>
-  );
-};
+  async componentDidMount() {
+    await this.fetchData();
+  }
+
+  render() {
+    const { userData, filteredData } = this.state;
+    return (
+      <>
+        <Search
+          data={userData}
+          setFilteredData={(filteredData) => this.setFilteredData(filteredData)}
+        />
+        {filteredData.length > 0 ? (
+          <Content data={filteredData} />
+        ) : (
+          <NoResultsFound />
+        )}
+      </>
+    );
+  }
+}
 
 export default Home;
