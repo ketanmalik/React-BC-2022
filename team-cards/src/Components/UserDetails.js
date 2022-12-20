@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Content from "./Content";
 import fetchUserDetails from "../utils/githubService";
-import "../Styles/UserDetails.css";
 
 const UserDetails = () => {
   const { id } = useParams();
