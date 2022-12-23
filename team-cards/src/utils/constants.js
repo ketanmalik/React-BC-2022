@@ -16,4 +16,6 @@ export const stringLiterals = {
   ERROR: "Error:",
   NO_RESULTS_FOUND: "No results found",
   SEARCH: "Search",
+  STATE: "State:",
+  CITY: "City:",
 };

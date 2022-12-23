@@ -1,5 +1,6 @@
 import Content from "./Content.js";
 import Search from "./Search.js";
+import Filters from "./Filters.js";
 import NoResultsFound from "./NoResultsFound.js";
 import { useState, useEffect } from "react";
 import fetchUserDetails from "../utils/githubService";
@@ -23,6 +24,7 @@ const Home = () => {
   return (
     <>
       <Search data={userData} setFilteredData={setFilteredData} />
+      <Filters />
       {filteredData.length > 0 ? (
         <Content data={filteredData} />
       ) : (
