@@ -1,9 +1,12 @@
 import teamLogo from "../assets/team-logo.gif";
+import { Link } from "react-router-dom";
 import "../Styles/Header.css";
 
 const Header = () => (
   <div className="header-wrapper">
-    <img src={teamLogo} alt="Team Logo" />
+    <Link to="/">
+      <img className="team-logo" src={teamLogo} alt="Team Logo" />
+    </Link>
   </div>
 );
 

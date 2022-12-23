@@ -1,16 +1,15 @@
-import Header from "./Components/Header.js";
-import Content from "./Components/Content.js";
-import Search from "./Components/Search.js";
-import NoResultsFound from "./Components/NoResultsFound.js";
+import Content from "./Content.js";
+import Search from "./Search.js";
+import NoResultsFound from "./NoResultsFound.js";
 import { useState, useEffect } from "react";
-import "./Styles/App.css";
+import fetchUserDetails from "../utils/githubService";
+import "../Styles/Home.css";
 
-const App = () => {
+const Home = () => {
   const [userData, setUserData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
 
   const fetchData = async () => {
-    const userData = [];
     const users = [
       "ketanmalik",
       "SumitARG",
@@ -18,11 +17,8 @@ const App = () => {
       "Ehraz98",
       "pandeymeenakshi",
     ];
-    for await (const user of users) {
-      const data = await fetch(`https://api.github.com/users/${user}`);
-      const json = await data.json();
-      userData.push(json);
-    }
+
+    const userData = await fetchUserDetails(users);
     setUserData(userData);
     setFilteredData(userData);
   };
@@ -33,7 +29,6 @@ const App = () => {
 
   return (
     <>
-      <Header />
       <Search data={userData} setFilteredData={setFilteredData} />
       {filteredData.length > 0 ? (
         <Content data={filteredData} />
@@ -44,4 +39,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
