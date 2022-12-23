@@ -1,10 +1,11 @@
 import "../Styles/Content.css";
+import { stringLiterals } from "../utils/constants";
 import Cards from "../Components/Cards.js";
 
 const Content = (props) => {
   return (
     <div className="content-wrapper">
-      <span>Know the Team</span>
+      <span>{stringLiterals.KNOW_THE_TEAM}</span>
       <hr />
       <div className="teamMembers-details">
         {props.data.map((teamMember, i) => (
