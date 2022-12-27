@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { stringLiterals } from "../utils/constants";
 import "../Styles/Search.css";
 
 const searchTeamMembers = (e, searchTerm, setFilteredData, data) => {
@@ -25,7 +26,7 @@ const Search = ({ setFilteredData, data }) => {
           defaultValue={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <button className="search-button">Search</button>
+        <button className="search-button">{stringLiterals.SEARCH}</button>
       </form>
     </div>
   );

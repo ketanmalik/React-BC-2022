@@ -1,0 +1,16 @@
+.filters-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.state-city-wrapper {
+  margin: 3em;
+}
+
+.state-city-wrapper select {
+  /* width: 10em; */
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #fbfbfb;
+}
